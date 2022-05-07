@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background-color: #444791;
+    color: white;
+    padding: 0 20px;
+    position: relative;
+
+    &__center {
+        position: relative;
+
+        width: 1050px;
+
+        &__input {
+            width: 100%;
+            padding-left: 30px;
+            outline: none;
+        }
+
+        &__icon {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+        }
+    }
+}
+
+.profile {
+    z-index: 999999;
+    background: white;
+    width: 300px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 10px;
+    position: absolute;
+    border: 1px solid #e0e0e0;
+    right: 5px;
+    top: 105%;
+    color: black; 
+    display: none;   
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        border-bottom: 1px solid #e0e0e0;
+
+        &__avatar {
+            height: 50px;
+            width: 50px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 99999px;
+
+            & > img{
+                height: 100%;
+                width: 100%;
+                border-radius: 99999px;
+            }
+
+            & > img:hover{
+                background-color: red;
+            }
+        }
+
+    }
+
+    &__item {
+        display: flex;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #e0e0e0;
+        &:hover {
+            background-color: #444791;
+            color: white;
+        }
+    }
+}
+
+.header__avatar:focus .profile {
+    display: block;
+}

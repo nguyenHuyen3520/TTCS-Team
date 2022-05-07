@@ -1,0 +1,27 @@
+.Navigator {
+    width: 70px;    
+    padding: 1px;
+    background-color: #c7c7c7;
+    flex: 1;
+    height: 100vh;    
+
+    &__item {
+        font-size: 14px;
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+    }
+
+    &__active {
+        color: #444791;
+        border-left: 3px solid #444791;
+    }
+
+}
+
+.active {
+    border-left: '3px solid #444791'
+}

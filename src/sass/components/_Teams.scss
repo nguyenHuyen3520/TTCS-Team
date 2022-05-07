@@ -1,0 +1,123 @@
+.teams {    
+    height: 100%;
+    width: 100%;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &__left {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        &__right {
+            z-index: 99;
+            padding: 5px;
+            display: flex;
+            border: 1px solid #e0e0e0;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e0e0e0;
+            }
+
+            &__icon {
+                padding: 0 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            &__title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    &__container {
+        padding: 20px 0;
+        cursor: pointer;
+
+        &__title {
+            display: flex;
+            font-size: 16px;
+            padding-bottom: 20px;
+
+            &__icon {
+                padding-right: 5px;
+            }
+        }
+
+        &__list {
+            padding: 10px 0;
+            padding-bottom: 50px;
+            &__item {
+                height: 210px;
+                border: 1px solid #e0e0e0;
+                padding: 5px 20px;
+                box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 5px;
+                &:hover{
+                    background-color: #e0e0e0;
+                }
+                &__img {
+                    height: 70px;
+                    width: 70px;
+                }
+
+                &__text {                    
+                    text-align: center;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    /* number of lines to show */
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}
+
+.joinTeam{    
+    height: 100%;
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 20px;
+    &__header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        & > div:first-child{
+            margin-right: 10PX;
+        }  
+        
+        &:hover{
+            color: #444791;
+            cursor: pointer;
+        }
+    }
+
+    &__container{
+        &__title{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        &__box{
+            height: 250px;
+            width: 270px;
+            background-color: white;
+            padding: 20px;
+
+            & input{
+                outline: none;
+                padding: 5px;
+                background-color: #e0dede;
+                border-radius: 2px;                
+            }
+        }
+    }
+}
